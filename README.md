@@ -1,3 +1,2 @@
-# README for use of Knowledge base to classify learning disabilities
-
+# Use of knowledge base to classify learning disabilities
 ![alt text](Images/ClassificationGraph.png)
