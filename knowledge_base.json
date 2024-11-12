@@ -1,221 +1,170 @@
 {
-  "Knowledge base": [
-    {
-      "disorder": "dyslexia",
-      "symptoms": [
+    "Knowledge base": [
         {
-          "name": "reading_difficulty",
-          "question": "Do you find it challenging to read quickly or accurately?"
+            "disorder": "general learning disability",
+            "symptoms": [
+                {
+                    "name": "Lower grades",
+                    "question": "Do you find that your grades are almost always lower than your peers?"
+                },
+                {
+                    "name": "Pace of education",
+                    "question": "Do you struggle to keep up with the speed required in education"
+                },
+                {
+                    "name": "Repeating of years",
+                    "question": "Have you ever had to repeat a year in school?"
+                },
+                {
+                    "name": "Perceived difficulty",
+                    "question": "Do you find that you have to put in more effort than others to understand concepts?"
+                },
+                {
+                    "name": "Perceived intelligence",
+                    "question": "Do you feel that you are less intelligent than your peers?"
+                },
+                {
+                    "name": "Believed learning disability",
+                    "question": "Do you believe that you have a learning disability?"
+                }
+            ]
         },
         {
-          "name": "spelling_errors",
-          "question": "Do you frequently make spelling errors, even in simple words?"
+            "disorder": "Physiological learning disabilities",
+            "symptoms": [
+                {
+                    "name": "slow reading",
+                    "question": "Do you read slowly or have trouble keeping up?"
+                },
+                {
+                    "name": "spelling difficulty",
+                    "question": "Do you often spell words incorrectly or mix up letter order?"
+                }
+            ]
         },
         {
-          "name": "letter_reversal",
-          "question": "Do you often reverse letters or numbers when reading or writing?"
+            "disorder": "Physical learning disabilities",
+            "symptoms": [
+                {
+                    "name": "difficulty decoding words",
+                    "question": "Do you find it difficult to decode unfamiliar words?"
+                }
+            ]
         },
         {
-          "name": "difficulty_rhyming",
-          "question": "Do you have trouble recognizing or producing rhyming words?"
+            "disorder": "General Physical learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
         },
         {
-          "name": "slow_reading",
-          "question": "Do you read at a slower pace compared to your peers?"
+            "disorder": "General physiological learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
+        },
+        {
+            "disorder": "Mathematical learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
+        },
+        {
+            "disorder": "Writing learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
+        },
+        {
+            "disorder": "Reading learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
+        },
+        {
+            "disorder": "Executive learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
+        },
+        {
+            "disorder": "Language learning disability",
+            "symptoms": [
+                {
+                    "name": "persistent reading issues",
+                    "question": "Do you consistently struggle with reading despite practice?"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "disorder": "adhd",
-      "symptoms": [
+    ],
+    "Rules": [
         {
-          "name": "inattention",
-          "question": "Do you often have difficulty sustaining attention on tasks or activities?"
+            "current disorder": "general learning disability",
+            "required symptoms": [
+                "difficulty reading",
+                "difficulty with math"
+            ],
+            "number": 1,
+            "new direction": "reading disability",
+            "else": "math disability"
         },
         {
-          "name": "hyperactivity",
-          "question": "Do you frequently feel restless or fidgety?"
+            "current disorder": "reading disability",
+            "required symptoms": [
+                "slow reading",
+                "spelling difficulty"
+            ],
+            "number": 1,
+            "new direction": "specific reading disability",
+            "else": "math disability"
         },
         {
-          "name": "impulsivity",
-          "question": "Do you often act without thinking about the consequences?"
+            "current disorder": "specific reading disability",
+            "required symptoms": [
+                "difficulty decoding words",
+                "trouble with comprehension"
+            ],
+            "number": 1,
+            "new direction": "dyslexia",
+            "else": "conclusion general"
         },
         {
-          "name": "disorganization",
-          "question": "Do you struggle with organizing tasks and managing time effectively?"
+            "current disorder": "dyslexia",
+            "required symptoms": [
+                "persistent reading issues"
+            ],
+            "number": 1,
+            "new direction": "conclusion dyslexia",
+            "else": "conclusion general"
         },
         {
-          "name": "forgetfulness",
-          "question": "Do you often forget daily activities or lose things necessary for tasks?"
+            "current disorder": "math disability",
+            "required symptoms": [
+                "number recognition difficulty",
+                "calculation difficulty"
+            ],
+            "number": 1,
+            "new direction": "conclusion math disability",
+            "else": "conclusion general"
         }
-      ]
-    },
-    {
-      "disorder": "dyscalculia",
-      "symptoms": [
-        {
-          "name": "number_sense_difficulty",
-          "question": "Do you find it hard to understand quantities or concepts like greater than and less than?"
-        },
-        {
-          "name": "calculation_difficulty",
-          "question": "Do you struggle with basic arithmetic operations like addition and subtraction?"
-        },
-        {
-          "name": "time_management_issues",
-          "question": "Do you have trouble reading clocks or managing time?"
-        },
-        {
-          "name": "sequencing_problems",
-          "question": "Do you find it difficult to remember the order of steps in a process?"
-        },
-        {
-          "name": "spatial_reasoning_difficulty",
-          "question": "Do you have trouble understanding spatial directions like left and right?"
-        }
-      ]
-    },
-    {
-      "disorder": "dysgraphia",
-      "symptoms": [
-        {
-          "name": "handwriting_issues",
-          "question": "Is your handwriting often illegible or inconsistent?"
-        },
-        {
-          "name": "copying_difficulty",
-          "question": "Do you struggle to copy text from a book or board accurately?"
-        },
-        {
-          "name": "spacing_problems",
-          "question": "Do you have trouble spacing words and letters properly when writing?"
-        },
-        {
-          "name": "writing_fatigue",
-          "question": "Do you feel tired or experience discomfort when writing by hand?"
-        },
-        {
-          "name": "grammar_punctuation_errors",
-          "question": "Do you frequently make mistakes with grammar or punctuation when writing?"
-        }
-      ]
-    },
-    {
-      "disorder": "auditory_processing_disorder",
-      "symptoms": [
-        {
-          "name": "following_instructions_difficulty",
-          "question": "Do you find it hard to follow spoken instructions, especially multi-step ones?"
-        },
-        {
-          "name": "frequent_repetition_requests",
-          "question": "Do you often ask people to repeat what they've said?"
-        },
-        {
-          "name": "background_noise_trouble",
-          "question": "Do you struggle to understand speech when there's background noise?"
-        },
-        {
-          "name": "mishearing_words",
-          "question": "Do you frequently misunderstand or mishear similar-sounding words?"
-        },
-        {
-          "name": "phonics_difficulty",
-          "question": "Do you have trouble associating sounds with their corresponding letters?"
-        }
-      ]
-    }
-  ],
-  "Rules": [
-    {
-      "current_disorder": "dyslexia",
-      "required_symptoms": [
-        "reading_difficulty",
-        "spelling_errors",
-        "letter_reversal",
-        "difficulty_rhyming",
-        "slow_reading"
-      ],
-      "number": 3,
-      "new_direction": "conclusion_dyslexia",
-      "else": "adhd"
-    },
-    {
-      "current_disorder": "adhd",
-      "required_symptoms": [
-        "inattention",
-        "hyperactivity",
-        "impulsivity",
-        "disorganization",
-        "forgetfulness"
-      ],
-      "number": 3,
-      "new_direction": "conclusion_adhd",
-      "else": "dyscalculia"
-    },
-    {
-      "current_disorder": "dyscalculia",
-      "required_symptoms": [
-        "number_sense_difficulty",
-        "calculation_difficulty",
-        "time_management_issues",
-        "sequencing_problems",
-        "spatial_reasoning_difficulty"
-      ],
-      "number": 3,
-      "new_direction": "conclusion_dyscalculia",
-      "else": "dysgraphia"
-    },
-    {
-      "current_disorder": "dysgraphia",
-      "required_symptoms": [
-        "handwriting_issues",
-        "copying_difficulty",
-        "spacing_problems",
-        "writing_fatigue",
-        "grammar_punctuation_errors"
-      ],
-      "number": 3,
-      "new_direction": "conclusion_dysgraphia",
-      "else": "auditory_processing_disorder"
-    },
-    {
-      "current_disorder": "auditory_processing_disorder",
-      "required_symptoms": [
-        "following_instructions_difficulty",
-        "frequent_repetition_requests",
-        "background_noise_trouble",
-        "mishearing_words",
-        "phonics_difficulty"
-      ],
-      "number": 3,
-      "new_direction": "conclusion_auditory_processing_disorder",
-      "else": "conclusion_no_disorder"
-    },
-    {
-      "current_disorder": "conclusion_dyslexia",
-      "advice": "Based on your responses, you may be experiencing symptoms associated with dyslexia. It is recommended to consult a qualified professional for a comprehensive evaluation."
-    },
-    {
-      "current_disorder": "conclusion_adhd",
-      "advice": "Your answers suggest symptoms commonly associated with ADHD. Please consider seeking a professional assessment for accurate diagnosis and support."
-    },
-    {
-      "current_disorder": "conclusion_dyscalculia",
-      "advice": "You may be showing signs of dyscalculia. A professional evaluation can provide clarity and help you access appropriate resources."
-    },
-    {
-      "current_disorder": "conclusion_dysgraphia",
-      "advice": "Your responses indicate possible symptoms of dysgraphia. Consulting a specialist can help in understanding your challenges and finding strategies to assist you."
-    },
-    {
-      "current_disorder": "conclusion_auditory_processing_disorder",
-      "advice": "You might be experiencing symptoms related to Auditory Processing Disorder. It's advisable to seek a professional assessment for further insight."
-    },
-    {
-      "current_disorder": "conclusion_no_disorder",
-      "advice": "Your responses do not indicate a strong likelihood of a specific learning disability based on this questionnaire. If you still have concerns, please consult a professional."
-    }
-  ],
-  "Facts": []
+    ],
+    "Facts": []
 }
