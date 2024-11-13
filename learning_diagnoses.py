@@ -2,29 +2,11 @@ import json
 import sys
 import tkinter as tk
 
-# Initialize the window and global variables
 window = tk.Tk()
 user_answer_var = tk.StringVar()
 
 window.geometry("1000x500")
 window.configure(background='#9DD9F3')
-
-# Set up grid layout
-for i in range(3):
-    window.columnconfigure(i, weight=1, minsize=200)
-    window.rowconfigure(i, weight=1, minsize=100)
-    for j in range(3):
-        if i == 1 and j == 1:
-            mainFrame = tk.Frame(master=window, height=400, width=300, background="white")
-            mainFrame.grid(row=i, column=j)
-            continue
-        frame = tk.Frame(master=window)
-        frame.grid(row=i, column=j)
-        label = tk.Label(master=frame, text="", background='#9DD9F3')
-        label.pack()
-
-mainFrame.config(width=200, height=400, background='white')
-layout_fix = tk.Label(master=mainFrame, background='white', width=200)
 
 
 def reset(facts, filename):
@@ -33,24 +15,6 @@ def reset(facts, filename):
         data = json.load(file)
     data["Facts"] = facts
     update_file(data, filename)
-
-
-# Clear previous widgets on the screen
-def clear_frame():
-    for widgets in mainFrame.winfo_children():
-        widgets.destroy()
-
-
-# Update text displayed in the main frame
-def update_text_frame(txt):
-    answer = tk.Label(master=mainFrame, text=txt, bg="white")
-    answer.grid(row=3, padx=50, pady=20)
-
-
-# Update title in the main frame
-def update_title_frame(txt):
-    title = tk.Label(master=mainFrame, text=txt, bg="white", font=("Arial", 16, "bold"))
-    title.grid(row=2, padx=50, pady=20)
 
 
 # Update the JSON file with current data

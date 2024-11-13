@@ -1,169 +1,278 @@
 {
     "Knowledge base": [
         {
-            "disorder": "general learning disability",
+            "disorder": "None detected",
+            "Weight": 1,
             "symptoms": [
                 {
-                    "name": "Lower grades",
-                    "question": "Do you find that your grades are almost always lower than your peers?"
+                    "name": "general learning disability suspected",
+                    "question": "Is there a general learning disability suspected?"
                 },
                 {
-                    "name": "Pace of education",
-                    "question": "Do you struggle to keep up with the speed required in education"
+                    "name": "inconsistent academic performance",
+                    "question": "Does the individual show inconsistent academic performance across subjects?"
                 },
                 {
-                    "name": "Repeating of years",
-                    "question": "Have you ever had to repeat a year in school?"
+                    "name": "low self-esteem or frustration in learning",
+                    "question": "Does the individual display low self-esteem or frustration related to learning tasks?"
+                }
+            ]
+        },
+        {
+            "disorder": "General learning disability",
+            "Weight": 2,
+            "symptoms":[
+                {
+                    "name": "Acquiring of new skills",
+                    "question": "Do you struggle with acquiring new skills or knowledge despite instruction and practice?"
                 },
                 {
-                    "name": "Perceived difficulty",
-                    "question": "Do you find that you have to put in more effort than others to understand concepts?"
+                    "name": "Broad difficulties across areas",
+                    "question": "Are there broad difficulties across multiple areas (e.g., reading, writing, math) rather than isolated challenges with understanding or expression?"
                 },
                 {
-                    "name": "Perceived intelligence",
-                    "question": "Do you feel that you are less intelligent than your peers?"
+                    "name": "Broad difficulties across areas",
+                    "question": "Are there broad difficulties across multiple areas (e.g., reading, writing, math) rather than isolated challenges with understanding or expression?"
                 },
                 {
-                    "name": "Believed learning disability",
-                    "question": "Do you believe that you have a learning disability?"
-                }
-            ]
-        },
-        {
-            "disorder": "Physiological learning disabilities",
-            "symptoms": [
-                {
-                    "name": "slow reading",
-                    "question": "Do you read slowly or have trouble keeping up?"
+                    "name": "Performance gap",
+                    "question": "Do you display a gap between your potential (e.g., IQ) and actual performance in academic settings?"
                 },
                 {
-                    "name": "spelling difficulty",
-                    "question": "Do you often spell words incorrectly or mix up letter order?"
+                    "name": "Consistency of difficulties",
+                    "question": "Are your difficulties consistent over time, regardless of changes in teaching methods or supports?"
+                },
+                {
+                    "name": "Difficulty interpreting information",
+                    "question": "Do you experience difficulty interpreting or processing information you receive (e.g., through listening, reading, observing)?"
+                },
+                {
+                    "name": "Difficulty understanding instructions",
+                    "question": "Do you struggle with understanding or retaining instructions, especially complex or multi-step ones?"
+                },
+                {
+                    "name": "Sensory processing issues",
+                    "question": "Are there specific issues with sensory processing, such as distinguishing similar sounds or recognizing visual patterns?"
+                },
+                {
+                    "name": "Need for repetition",
+                    "question": "Do you need frequent repetitions or simplifications to comprehend basic information?"
+                },
+                {
+                    "name": "Difficulty with communication",
+                    "question": "Do you understand concepts but struggle to communicate or demonstrate your knowledge?"
+                },
+                {
+                    "name": "Written or verbal expression difficulty",
+                    "question": "Do you have difficulty with written or verbal expression, resulting in responses that are slow, incomplete, or incoherent?"
+                },
+                {
+                    "name": "Motor skills impact on expression",
+                    "question": "Are there issues with motor skills affecting your ability to write, type, or physically express what you know?"
+                },
+                {
+                    "name": "Frustration in communication",
+                    "question": "Do you experience frustration when trying to communicate thoughts due to an inability to articulate ideas clearly?"
                 }
             ]
         },
         {
-            "disorder": "Physical learning disabilities",
+            "disorder": "Input based learning disability",
+            "weight": 3,
             "symptoms": [
                 {
-                    "name": "difficulty decoding words",
-                    "question": "Do you find it difficult to decode unfamiliar words?"
+                    "name": "Hard to understand",
+                    "question": "Do you find it hard to understand what is being said?"
+                },
+                {
+                    "name": "Larger font",
+                    "question": "Does having excessively large font help you read?"
+                },
+                {
+                    "name": "Glasses wearer",
+                    "question": "Does the user wear glasses?"
+                },
+                {
+                    "name": "Glasses prescription by specialist",
+                    "question": "Were the glasses prescribed by a specialist?"
+                },
+                {
+                    "name": "Glasses up to date",
+                    "question": "Were the glasses Recently updated?"
+                },
+                {
+                    "name": "Delivery of material",
+                    "question": "If material is delivered in a different way to text, does it help?"
                 }
             ]
         },
         {
-            "disorder": "General Physical learning disability",
+            "disorder": "Output based learning disabilities",
+            "weight": 3,
             "symptoms": [
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
+                    "name": "auditory processing disabilities",
+                    "question": "Does the individual have auditory processing disabilities?"
+                },
+                {
+                    "name": "motor skill disabilities",
+                    "question": "Does the individual have motor skill disabilities?"
+                },
+                {
+                    "name": "visual processing disabilities",
+                    "question": "Does the individual have visual processing disabilities?"
                 }
             ]
         },
         {
-            "disorder": "General physiological learning disability",
+            "disorder": "Physiological/behavioral learning disabilities",
+            "weight": 3,
             "symptoms": [
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
-                }
-            ]
-        },
-        {
-            "disorder": "Mathematical learning disability",
-            "symptoms": [
+                    "name": "reading disability",
+                    "question": "Does the individual have difficulty with reading?"
+                },
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
-                }
-            ]
-        },
-        {
-            "disorder": "Writing learning disability",
-            "symptoms": [
+                    "name": "writing disability",
+                    "question": "Does the individual have difficulty with writing?"
+                },
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
-                }
-            ]
-        },
-        {
-            "disorder": "Reading learning disability",
-            "symptoms": [
+                    "name": "mathematical disability",
+                    "question": "Does the individual have difficulty with mathematics?"
+                },
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
-                }
-            ]
-        },
-        {
-            "disorder": "Executive learning disability",
-            "symptoms": [
+                    "name": "executive function disability",
+                    "question": "Does the individual have executive function disabilities?"
+                },
                 {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
-                }
-            ]
-        },
-        {
-            "disorder": "Language learning disability",
-            "symptoms": [
-                {
-                    "name": "persistent reading issues",
-                    "question": "Do you consistently struggle with reading despite practice?"
+                    "name": "language disabilities",
+                    "question": "Does the individual have language impairments?"
                 }
             ]
         }
     ],
     "Rules": [
         {
-            "current disorder": "general learning disability",
-            "required symptoms": [
-                "difficulty reading",
-                "difficulty with math"
+            "current disorder": "None detected",
+            "movement options": [
+                {
+                    "required symptoms": [
+                        {"General learning disability suspected" : "<3"},
+                        {"inconsistent academic performance" : "<3"},
+                        {"low self-esteem or frustration in learning" : "<3"}
+                    ],
+                    "number": 2,
+                    "new direction": "General learning disability"
+                }
             ],
-            "number": 1,
-            "new direction": "reading disability",
-            "else": "math disability"
+            "else": "No learning disability suspected"
         },
         {
-            "current disorder": "reading disability",
-            "required symptoms": [
-                "slow reading",
-                "spelling difficulty"
+            "current disorder": "General learning disability",
+            "movement options" : [
+                {
+                    "required symptoms": [
+                        {"Acquiring of new skills" : ">3"},
+                        {"Broad difficulties across areas" : ">3"},
+                        {"Performance gap" : ">3"},
+                        {"Consistency of difficulties" : ">3"},
+                        {"Sensory processing issues" : "<3"},
+                        {"Motor skills impact on expression" : "<3"},
+                        {"Frustration in communication" : "<3"}
+                    ],
+                    "number": 2,
+                    "new direction": "Ext Learning disabilities"
+                },
+                {
+                    "required symptoms": [
+                        {"Difficulty interpreting information" : "<3"},
+                        {"Difficulty understanding instructions" : "<3"},
+                        {"Need for repetition" : "<3"}
+                    ],
+                    "number": 1,
+                    "new direction": "Input based disabilities"
+                },
+                {
+                    "required symptoms": [
+                        {"Written or verbal expression difficulty" : "<3"},
+                        {"Difficulty with communication" : "<3"}
+                    ],
+                    "number": 1,
+                    "new direction": "Output based disabilities"
+                },
+                {
+                    "required symptoms": [
+                        "physical learning disabilities"
+                    ],
+                    "number": 1,
+                    "new direction": "Input Output based disabilities"
+                }
             ],
-            "number": 1,
-            "new direction": "specific reading disability",
-            "else": "math disability"
+            "else": "General learning disabilities non specific conclusion"
         },
         {
-            "current disorder": "specific reading disability",
-            "required symptoms": [
-                "difficulty decoding words",
-                "trouble with comprehension"
+            "current disorder": "ext learning disabilities",
+            "movement options" : [
+                {
+                    "required symptoms": [
+                        "reading disability",
+                        "writing disability",
+                        "mathematical disability",
+                        "executive function disability",
+                        "language disabilities"
+                    ],
+                    "number": 1,
+                    "new direction": "Physiological/behavioral learning disabilities"
+                }
             ],
-            "number": 1,
-            "new direction": "dyslexia",
-            "else": "conclusion general"
+            "else": "No learning disability"
         },
         {
-            "current disorder": "dyslexia",
+            "current disorder": "Input learning disabilities",
             "required symptoms": [
-                "persistent reading issues"
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
             ],
             "number": 1,
-            "new direction": "conclusion dyslexia",
-            "else": "conclusion general"
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
         },
         {
-            "current disorder": "math disability",
+            "current disorder": "Output learning disabilities",
             "required symptoms": [
-                "number recognition difficulty",
-                "calculation difficulty"
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
             ],
             "number": 1,
-            "new direction": "conclusion math disability",
-            "else": "conclusion general"
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "Input Output learning disabilities",
+            "required symptoms": [
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
+            ],
+            "number": 1,
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "conclusion physiological disability",
+            "advice": "The assessment suggests a physiological learning disability. Please consult a specialist."
+        },
+        {
+            "current disorder": "No learning disability",
+            "advice": "There is no indication of a learning disability based on the responses."
         }
     ],
     "Facts": []
