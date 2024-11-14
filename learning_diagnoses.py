@@ -1,165 +1,74 @@
 import json
-import sys
-import tkinter as tk
-
-window = tk.Tk()
-user_answer_var = tk.StringVar()
-
-window.geometry("1000x500")
-window.configure(background='#9DD9F3')
-
 
 def reset(facts, filename):
-    facts.clear()  # Clear the facts list
+    facts.clear()
     with open(filename, "r") as file:
         data = json.load(file)
     data["Facts"] = facts
     update_file(data, filename)
 
-
-# Update the JSON file with current data
 def update_file(data, filename):
     with open(filename, "w") as file:
         json.dump(data, file, indent=4)
 
-
-# Read JSON data from file
 def read_file(filename):
     with open(filename, "r") as file:
-        data = json.load(file)
-    return data
+        return json.load(file)
+
+def questions_to_ask(disorders, facts):  # Ensure proper indentation level here
+    for symptom in disorders:
+        answer = input(f"{symptom['name']} (1 to 5): ")
+        facts.append((symptom["name"], answer))
+
+def calc_disorders_to_investigate(curr_disorder, rules, facts, current_disorders, knowledge_base):
+    ruleset_for_curr_disorder = next(
+        (rule for rule in rules if rule["current disorder"] == curr_disorder["disorder"]), None
+    )
+
+    for movement_option in ruleset_for_curr_disorder["movement options"]:
+        number_required = movement_option["number"]
+        disorder_direction = movement_option["new direction"]
+
+        for symptom in movement_option["required symptoms"]:
+            key, value = list(symptom.items())[0]
+            fact = next((f for f in facts if f[0] == key), None)
+
+            if fact:
+                threshold = int(value[1:])
+                if (">" in value and int(fact[1]) > threshold) or ("<" in value and int(fact[1]) < threshold):
+                    number_required -= 1
+                    if number_required < 0:
+                        number_required = 0  # Prevent over-decrementing
+
+        print(f"Final Number Required for {disorder_direction}: {number_required}")
+        if number_required <= 0:
+            disorder = next((d for d in knowledge_base if d["disorder"] == disorder_direction), None)
+            print(f"Disorder direction: {disorder_direction}")
+            if disorder:
+                print("Adding in " + disorder["disorder"])
+                current_disorders.append(disorder)
+
+            print("\n")
+
+def RunThrough(knowledge_base, rules):
+    disorders = []
+    facts = []
+    for key in knowledge_base:
+        disorders.append(key)
+
+    current_disorders = [disorders[0]]
+
+    # Loop until all disorders are processed
+    while current_disorders:
+        disorder = current_disorders.pop(0)  # Use pop(0) for FIFO processing
+        questions_to_ask(disorder["symptoms"], facts)
+        calc_disorders_to_investigate(disorder, rules, facts, current_disorders, knowledge_base)
 
 
-# Stop running if window is manually closed before reaching conclusion
-def on_closing():
-    user_answer_var.set('close')
-    window.destroy()
-
-
-# Continue to the first question
-def cont():
-    clear_frame()
-    new_question(i=0)
-
-
-# Welcome screen with a continue button
-def welcome(data, filename):
-    welcome_message = tk.Label(master=mainFrame, text="Welcome to the Learning Disability Diagnosis Tool!", bg='white')
-    welcome_message.grid(row=0, padx=5, pady=20, sticky='w')
-    continue_btn = tk.Button(master=mainFrame, text="Continue", command=lambda: execute_knowledge_base(data, filename))
-    continue_btn.grid(row=1, padx=5, pady=5)
-
-
-# Display a new question with yes/no buttons
-def new_question(question):
-    clear_frame()
-    print(f"\n[TRACE] Displaying question: {question}")
-    question_text = tk.Label(master=mainFrame, text=question, bg='white')
-    question_text.grid(row=0, padx=5, pady=20, sticky='w')
-    yes_btn = tk.Button(master=mainFrame, text="Yes", command=lambda: yes())
-    yes_btn.grid(row=1, padx=5, pady=5)
-    no_btn = tk.Button(master=mainFrame, text="No", command=lambda: no())
-    no_btn.grid(row=2, padx=5, pady=5)
-
-
-def yes():
-    print("[TRACE] User answered: Yes")
-    user_answer_var.set('yes')
-
-
-def no():
-    print("[TRACE] User answered: No")
-    user_answer_var.set('no')
-
-
-# Display disclaimer information
-def disclaimer(rules, current_disorder):
-    clear_frame()
-    update_title_frame("DISCLAIMER")
-    disclaimer_txt = ("This tool is not a substitute for professional services. Seek a qualified healthcare "
-                      "professional for an accurate diagnosis.")
-    update_text_frame(disclaimer_txt)
-    advice_btn = tk.Button(master=mainFrame, text="Advice", command=lambda: give_conclusion(rules, current_disorder))
-    advice_btn.grid(row=4, padx=5, pady=5)
-
-
-# Display the final conclusion based on diagnosis
-def give_conclusion(rules, current_disorder):
-    clear_frame()
-    print(f"[TRACE] Final conclusion for disorder: {current_disorder}")
-    if "conclusion" in current_disorder:
-        # Recognize and display a conclusive diagnosis
-        update_title_frame("CONCLUSION")
-        update_text_frame(f"The assessment suggests a diagnosis: {current_disorder.replace('conclusion ', '')}")
-        print(f"[TRACE] Diagnosis concluded: {current_disorder}")
-    else:
-        # Fallback if no specific conclusion is recognized
-        update_title_frame("CONCLUSION")
-        update_text_frame("The assessment is inconclusive. Please consult a specialist.")
-        print("[TRACE] Inconclusive assessment reached.")
-
-
-def rule_deduction(facts, rules, current_disorder):
-    print(f"\n[TRACE] Evaluating rules for disorder: {current_disorder}")
-    for rule in rules:
-        if rule["current disorder"] == current_disorder:
-            counter = sum(1 for symptom in rule.get("required symptoms", []) if symptom in facts)
-            print(f"[TRACE] Rule '{rule['current disorder']}' - Required symptoms matched: {counter} / {rule.get('number')}")
-            if counter >= rule.get("number"):
-                print(f"[TRACE] Moving to new direction: {rule['new direction']}")
-                return rule["new direction"]
-            else:
-                print(f"[TRACE] Moving to else direction: {rule['else']}")
-                return rule["else"]
-    print("[TRACE] No matching rule found; defaulting to general conclusion.")
-    return "conclusion general"
-
-
-def find_disorder(current_disorder, knowledge_base):
-    for item in knowledge_base:
-        if item["disorder"] == current_disorder:
-            return item
-    print(f"[TRACE] Disorder '{current_disorder}' not found in knowledge base.")
-    return {"disorder": current_disorder, "symptoms": []}
-
-
-# Execute the main knowledge base interaction loop
-# Execute the main knowledge base interaction loop
-def execute_knowledge_base(data, filename):
-    current_disorder = "dyslexia"  # Start with dyslexia as per the JSON structure
-    knowledge_base = data["Knowledge base"]
-    facts = data["Facts"]
-    rules = data["Rules"]
-    while "conclusion" not in current_disorder:
-        item = find_disorder(current_disorder, knowledge_base)
-        for symptom in item["symptoms"]:
-            if symptom["name"] not in facts and "no " + symptom["name"] not in facts:
-                print(f"\n[TRACE] Asking about symptom: {symptom['name']}")
-                new_question(symptom["question"])
-                mainFrame.wait_variable(user_answer_var)
-                answer = symptom["name"] if user_answer_var.get() == 'yes' else "no " + symptom["name"]
-                facts.append(answer)
-                print(f"[TRACE] Added '{answer}' to facts")
-                if user_answer_var.get() == 'close':
-                    sys.exit()
-                update_file(data, filename)
-        current_disorder = rule_deduction(facts, rules, current_disorder)
-
-    # Display conclusion after breaking out of the loop
-    give_conclusion(rules, current_disorder)
-
-
-# Main function to start the application
 def main():
     filename = 'knowledge_base.json'
     data = read_file(filename)
-    reset(data["Facts"], filename)
-    welcome(data, filename)
-
+    RunThrough(data["Knowledge base"], data["Rules"])
 
 if __name__ == "__main__":
     main()
-
-# Run the main function
-window.protocol("WM_DELETE_WINDOW", on_closing)
-window.mainloop()
