@@ -1,5 +1,10 @@
 # Use of knowledge base to classify learning disabilities
+
+## Initial idea
 ![alt text](Images/ClassificationGraph.png)
+## Method we are actually going with
+![alt text](Images/actual.png)
+
 
 ## Introduction
 The purpose of this project is to use a knowledge base to classify learning disabilities. The knowledge base is a graph that contains information about learning disabilities and their symptoms. The graph is used to classify learning disabilities based on the symptoms that a person exhibits. The project uses a rule-based system to classify learning disabilities based on the symptoms that a person exhibits. The project also uses a knowledge base to provide information about learning disabilities and their symptoms. The project is implemented in Python using the NetworkX library to create and manipulate the graph.
