@@ -1,0 +1,253 @@
+{
+    "Knowledge base": [
+        {
+            "disorder": "None detected",
+            "Weight": 1,
+            "symptoms": [
+                {
+                    "name": "General learning disability suspected",
+                    "question": "Is there a general learning disability suspected?"
+                },
+                {
+                    "name": "inconsistent academic performance",
+                    "question": "Does the individual show inconsistent academic performance across subjects?"
+                },
+                {
+                    "name": "low self-esteem or frustration in learning",
+                    "question": "Does the individual display low self-esteem or frustration related to learning tasks?"
+                }
+            ]
+        },
+        {
+            "disorder": "General learning disability",
+            "Weight": 2,
+            "symptoms": [
+                {
+                    "name": "Output based difficulties",
+                    "question": "Do you have difficulty outputting information"
+                },
+                {
+                    "name": "Input based difficulties",
+                    "question": "Do you have difficulty inputting information"
+                },
+                {
+                    "name": "Learning based difficulties",
+                    "question": "Do you have difficulty learning new information"
+                }
+            ]
+        },
+        {
+            "disorder": "Input based learning disability",
+            "weight": 3,
+            "symptoms": [
+                {
+                    "name": "Hard to understand",
+                    "question": "Do you find it hard to understand what is being said?"
+                },
+                {
+                    "name": "Larger font",
+                    "question": "Does having excessively large font help you read?"
+                },
+                {
+                    "name": "Glasses wearer",
+                    "question": "Does the user wear glasses?"
+                },
+                {
+                    "name": "Glasses prescription by specialist",
+                    "question": "Were the glasses prescribed by a specialist?"
+                },
+                {
+                    "name": "Glasses up to date",
+                    "question": "Were the glasses Recently updated?"
+                },
+                {
+                    "name": "Delivery of material",
+                    "question": "If material is delivered in a different way to text, does it help?"
+                }
+            ]
+        },
+        {
+            "disorder": "Output based disabilities",
+            "weight": 3,
+            "symptoms": [
+                {
+                    "name": "auditory processing disabilities",
+                    "question": "Does the individual have auditory processing disabilities?"
+                },
+                {
+                    "name": "motor skill disabilities",
+                    "question": "Does the individual have motor skill disabilities?"
+                },
+                {
+                    "name": "visual processing disabilities",
+                    "question": "Does the individual have visual processing disabilities?"
+                }
+            ]
+        },
+        {
+            "disorder": "Physiological/behavioral learning disabilities",
+            "weight": 3,
+            "symptoms": [
+                {
+                    "name": "reading disability",
+                    "question": "Does the individual have difficulty with reading?"
+                },
+                {
+                    "name": "writing disability",
+                    "question": "Does the individual have difficulty with writing?"
+                },
+                {
+                    "name": "mathematical disability",
+                    "question": "Does the individual have difficulty with mathematics?"
+                },
+                {
+                    "name": "executive function disability",
+                    "question": "Does the individual have executive function disabilities?"
+                },
+                {
+                    "name": "language disabilities",
+                    "question": "Does the individual have language impairments?"
+                }
+            ]
+        }
+    ],
+    "Rules": [
+        {
+            "current disorder": "None detected",
+            "movement options": [
+                {
+                    "required symptoms": [
+                        {
+                            "General learning disability suspected": ">3"
+                        },
+                        {
+                            "inconsistent academic performance": ">3"
+                        },
+                        {
+                            "low self-esteem or frustration in learning": ">3"
+                        }
+                    ],
+                    "number": 2,
+                    "new direction": "General learning disability"
+                }
+            ],
+            "else": "No learning disability suspected"
+        },
+        {
+            "current disorder": "General learning disability",
+            "movement options": [
+                {
+                    "required symptoms": [
+                        {
+                            "Output based difficulties": "<3"
+                        },
+                        {
+                            "Input based difficulties": "<3"
+                        },
+                        {
+                            "Learning based difficulties": ">3"
+                        }
+                    ],
+                    "number": 2,
+                    "new direction": "Ext Learning disabilities"
+                },
+                {
+                    "required symptoms": [
+                        {
+                            "Output based difficulties": "<3"
+                        },
+                        {
+                            "Input based difficulties": ">3"
+                        },
+                        {
+                            "Learning based difficulties": "<3"
+                        }
+                    ],
+                    "number": 2,
+                    "new direction": "Input based disabilities"
+                },
+                {
+                    "required symptoms": [
+                        {
+                            "Output based difficulties": ">3"
+                        },
+                        {
+                            "Input based difficulties": "<3"
+                        },
+                        {
+                            "Learning based difficulties": "<3"
+                        }
+                    ],
+                    "number": 2,
+                    "new direction": "Output based disabilities"
+                }
+            ],
+            "else": "General learning disabilities non specific conclusion"
+        },
+        {
+            "current disorder": "ext learning disabilities",
+            "movement options": [
+                {
+                    "required symptoms": [
+                        "reading disability",
+                        "writing disability",
+                        "mathematical disability",
+                        "executive function disability",
+                        "language disabilities"
+                    ],
+                    "number": 1,
+                    "new direction": "Physiological/behavioral learning disabilities"
+                }
+            ],
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "Input learning disabilities",
+            "required symptoms": [
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
+            ],
+            "number": 1,
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "Output learning disabilities",
+            "required symptoms": [
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
+            ],
+            "number": 1,
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "Input Output learning disabilities",
+            "required symptoms": [
+                "reading disability",
+                "writing disability",
+                "mathematical disability",
+                "executive function disability",
+                "language disabilities"
+            ],
+            "number": 1,
+            "new direction": "conclusion physiological disability",
+            "else": "No learning disability"
+        },
+        {
+            "current disorder": "conclusion physiological disability",
+            "advice": "The assessment suggests a physiological learning disability. Please consult a specialist."
+        },
+        {
+            "current disorder": "No learning disability",
+            "advice": "There is no indication of a learning disability based on the responses."
+        }
+    ],
+    "Facts": []
+}
