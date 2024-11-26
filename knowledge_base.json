@@ -9,12 +9,16 @@
                     "question": "Is there a general learning disability suspected?"
                 },
                 {
-                    "name": "inconsistent academic performance",
+                    "name": "Inconsistent academic performance",
                     "question": "Does the individual show inconsistent academic performance across subjects?"
                 },
                 {
-                    "name": "low self-esteem or frustration in learning",
+                    "name": "Low self-esteem or frustration in learning",
                     "question": "Does the individual display low self-esteem or frustration related to learning tasks?"
+                },
+                {
+                    "name": "Avoidance of academic tasks",
+                    "question": "Does the individual frequently avoid tasks that require significant mental effort, such as reading or writing?"
                 }
             ]
         },
@@ -23,231 +27,477 @@
             "Weight": 2,
             "symptoms": [
                 {
-                    "name": "Output based difficulties",
-                    "question": "Do you have difficulty outputting information"
+                    "name": "Following spoken instructions",
+                    "question": "Do you find it difficult to follow spoken instructions, especially if they are long or detailed?"
                 },
                 {
-                    "name": "Input based difficulties",
-                    "question": "Do you have difficulty inputting information"
+                    "name": "Distinguishing similar sounds",
+                    "question": "Do you struggle to distinguish similar-sounding words or letters?"
                 },
                 {
-                    "name": "Learning based difficulties",
-                    "question": "Do you have difficulty learning new information"
+                    "name": "Reading visual clarity",
+                    "question": "When reading, do words or letters seem to blur, move, or become confusing?"
+                },
+                {
+                    "name": "Understanding in noisy environments",
+                    "question": "Do you often mishear or misunderstand conversations in noisy environments?"
+                },
+                {
+                    "name": "Remembering input information",
+                    "question": "Do you find it challenging to remember information you read or hear?"
+                },
+                {
+                    "name": "Expressing thoughts",
+                    "question": "Do you find it hard to put your thoughts into words, either spoken or written?"
+                },
+                {
+                    "name": "Handwriting clarity",
+                    "question": "Is your handwriting difficult for others (or yourself) to read?"
+                },
+                {
+                    "name": "Spelling accuracy",
+                    "question": "Do you often make errors when trying to spell words, even ones you know well?"
+                },
+                {
+                    "name": "Organizing thoughts",
+                    "question": "Do you have trouble organizing your thoughts when speaking or writing?"
+                },
+                {
+                    "name": "Verbal hesitation",
+                    "question": "Do you hesitate or feel blocked when asked to answer questions verbally?"
+                },
+                {
+                    "name": "Maintaining focus",
+                    "question": "Do you often feel distracted or have trouble maintaining focus on tasks?"
+                },
+                {
+                    "name": "Physical restlessness",
+                    "question": "Do you find it hard to sit still or feel restless during activities that require sustained attention?"
+                },
+                {
+                    "name": "Time management",
+                    "question": "Do you struggle to manage your time effectively or keep track of deadlines?"
+                },
+                {
+                    "name": "Forgetting instructions",
+                    "question": "Do you frequently forget instructions, tasks, or details shortly after hearing them?"
+                },
+                {
+                    "name": "Starting or completing tasks",
+                    "question": "Do you find it hard to start or complete tasks that require significant mental effort?"
+                },
+                {
+                    "name": "Difficulty following multi-step instructions",
+                    "question": "Do you have difficulty following instructions that involve multiple steps?"
+                },
+                {
+                    "name": "Frequent errors in mathematical calculations",
+                    "question": "Do you often make errors in basic mathematical calculations, even when you understand the concepts?"
                 }
             ]
         },
         {
-            "disorder": "Input based learning disability",
-            "weight": 3,
+            "disorder": "Dysgraphia",
+            "Weight": 1,
             "symptoms": [
                 {
-                    "name": "Hard to understand",
-                    "question": "Do you find it hard to understand what is being said?"
+                    "name": "Unable to read own handwriting",
+                    "question": "Do you find it difficult to read your own handwriting?"
                 },
                 {
-                    "name": "Larger font",
-                    "question": "Does having excessively large font help you read?"
+                    "name": "Handwriting clarity",
+                    "question": "Is your handwriting difficult for others to read?"
                 },
                 {
-                    "name": "Glasses wearer",
-                    "question": "Does the user wear glasses?"
+                    "name": "Hand fatigue",
+                    "question": "Do you experience hand fatigue or discomfort when writing for extended periods?"
                 },
                 {
-                    "name": "Glasses prescription by specialist",
-                    "question": "Were the glasses prescribed by a specialist?"
+                    "name": "Difficulty forming letters",
+                    "question": "Do you find it challenging to form letters properly when writing?"
                 },
                 {
-                    "name": "Glasses up to date",
-                    "question": "Were the glasses Recently updated?"
+                    "name": "Spacing and alignment issues",
+                    "question": "Do you have difficulty keeping consistent spacing and alignment when writing?"
                 },
                 {
-                    "name": "Delivery of material",
-                    "question": "If material is delivered in a different way to text, does it help?"
+                    "name": "Inconsistent letter sizing",
+                    "question": "Do your letters often vary significantly in size when writing, making your handwriting difficult to read?"
                 }
             ]
         },
         {
-            "disorder": "Output based disabilities",
-            "weight": 3,
+            "disorder": "ADHD-like characteristics",
+            "Weight": 1,
             "symptoms": [
                 {
-                    "name": "auditory processing disabilities",
-                    "question": "Does the individual have auditory processing disabilities?"
+                    "name": "Careless mistakes",
+                    "question": "Do you often make careless mistakes in schoolwork or other activities?"
                 },
                 {
-                    "name": "motor skill disabilities",
-                    "question": "Does the individual have motor skill disabilities?"
+                    "name": "Forgetful",
+                    "question": "Do you consider yourself forgetful?"
                 },
                 {
-                    "name": "visual processing disabilities",
-                    "question": "Does the individual have visual processing disabilities?"
+                    "name": "Impulsivity",
+                    "question": "Do you often act without thinking or find it hard to wait your turn?"
+                },
+                {
+                    "name": "Difficulty staying organized",
+                    "question": "Do you struggle to keep your belongings or tasks organized?"
+                },
+                {
+                    "name": "Frequent daydreaming",
+                    "question": "Do you find yourself daydreaming frequently or zoning out during tasks?"
+                },
+                {
+                    "name": "Hyperfocus",
+                    "question": "Do you sometimes become so focused on one task that you lose track of time or forget other responsibilities?"
+                },
+                {
+                    "name": "Easily bored",
+                    "question": "Do you often feel easily bored, especially during repetitive or unstimulating tasks?"
                 }
             ]
         },
         {
-            "disorder": "Physiological/behavioral learning disabilities",
-            "weight": 3,
+            "disorder": "Auditory Processing Disorder",
+            "Weight": 1,
             "symptoms": [
                 {
-                    "name": "reading disability",
-                    "question": "Does the individual have difficulty with reading?"
+                    "name": "Auditory Discrimination Difficulty",
+                    "question": "Do you often confuse similar-sounding words, such as 'bat' and 'pat'?"
                 },
                 {
-                    "name": "writing disability",
-                    "question": "Does the individual have difficulty with writing?"
+                    "name": "Auditory Figure-Ground Difficulty",
+                    "question": "Do you struggle to focus on a conversation when there is background noise, such as in a crowded room?"
                 },
                 {
-                    "name": "mathematical disability",
-                    "question": "Does the individual have difficulty with mathematics?"
+                    "name": "Auditory Memory (Short-term)",
+                    "question": "Do you have difficulty remembering spoken instructions or information immediately after hearing them?"
                 },
                 {
-                    "name": "executive function disability",
-                    "question": "Does the individual have executive function disabilities?"
+                    "name": "Auditory Memory (Long-term)",
+                    "question": "Do you have trouble recalling information that you heard long ago, such as stories or directions?"
                 },
                 {
-                    "name": "language disabilities",
-                    "question": "Does the individual have language impairments?"
+                    "name": "Auditory Sequencing Difficulty",
+                    "question": "Do you often mix up the order of instructions or numbers, like '3, 5, 7' being remembered as '5, 3, 7'?"
+                },
+                {
+                    "name": "Delayed response to verbal questions",
+                    "question": "Do you often take longer to respond to verbal questions, needing more time to process them?"
+                },
+                {
+                    "name": "Difficulty processing rapid speech",
+                    "question": "Do you have trouble understanding speech when people talk quickly?"
+                },
+                {
+                    "name": "Misinterpreting tone or context",
+                    "question": "Do you sometimes misinterpret the tone or emotional context of what people are saying?"
+                }
+            ]
+        },
+        {
+            "disorder": "Reading Comprehension Issues",
+            "Weight": 1,
+            "symptoms": [
+                {
+                    "name": "Difficulty understanding text",
+                    "question": "Do you struggle to understand what you read, even if you read slowly and carefully?"
+                },
+                {
+                    "name": "Rereading passages",
+                    "question": "Do you often need to reread passages multiple times to understand them?"
+                },
+                {
+                    "name": "Difficulty identifying main ideas",
+                    "question": "Do you find it challenging to identify the main ideas or important details in what you read?"
+                },
+                {
+                    "name": "Skipping words or lines",
+                    "question": "Do you often skip words or entire lines when reading?"
+                },
+                {
+                    "name": "Reading comprehension fatigue",
+                    "question": "Do you feel fatigued or overwhelmed after reading for a short period?"
+                }
+            ]
+        },
+        {
+            "disorder": "Dyscalculia",
+            "Weight": 1,
+            "symptoms": [
+                {
+                    "name": "Difficulty understanding numbers",
+                    "question": "Do you have difficulty understanding the value of numbers or basic numerical concepts?"
+                },
+                {
+                    "name": "Difficulty with mathematical operations",
+                    "question": "Do you struggle to perform basic mathematical operations, such as addition, subtraction, multiplication, or division?"
+                },
+                {
+                    "name": "Confusion with mathematical symbols",
+                    "question": "Do you often get confused by mathematical symbols like +, -, x, and ÷?"
+                },
+                {
+                    "name": "Difficulty estimating quantities",
+                    "question": "Do you find it challenging to estimate quantities, such as determining which of two groups is larger?"
+                },
+                {
+                    "name": "Trouble with time-related calculations",
+                    "question": "Do you have difficulty with calculations involving time, such as reading a clock or determining how much time has passed?"
+                }
+            ]
+        },
+        {
+            "disorder": "Nonverbal Learning Disability (NVLD)",
+            "Weight": 1,
+            "symptoms": [
+                {
+                    "name": "Difficulty with spatial awareness",
+                    "question": "Do you find it challenging to navigate spaces or understand spatial relationships, such as judging distances?"
+                },
+                {
+                    "name": "Poor coordination",
+                    "question": "Do you often struggle with tasks that require coordination, such as sports or using tools?"
+                },
+                {
+                    "name": "Difficulty interpreting nonverbal cues",
+                    "question": "Do you find it hard to understand body language, facial expressions, or other nonverbal communication?"
+                },
+                {
+                    "name": "Difficulty with problem-solving",
+                    "question": "Do you struggle with problem-solving, especially in situations that involve visual-spatial reasoning?"
+                },
+                {
+                    "name": "Rigid thinking patterns",
+                    "question": "Do you find it difficult to adapt to changes or think flexibly when faced with new situations?"
                 }
             ]
         }
     ],
     "Rules": [
         {
-            "current disorder": "None detected",
-            "movement options": [
+            "current_disorder": "None detected",
+            "movement_options": [
                 {
-                    "required symptoms": [
-                        {
-                            "General learning disability suspected": ">3"
-                        },
-                        {
-                            "inconsistent academic performance": ">3"
-                        },
-                        {
-                            "low self-esteem or frustration in learning": ">3"
-                        }
+                    "required_symptoms": [
+                        { "General learning disability suspected": ">2" },
+                        { "Inconsistent academic performance": ">2" },
+                        { "Low self-esteem or frustration in learning": ">2" }
                     ],
                     "number": 2,
-                    "new direction": "General learning disability"
+                    "new_direction": "General learning disability"
                 }
             ],
             "else": "No learning disability suspected"
         },
         {
-            "current disorder": "General learning disability",
-            "movement options": [
+            "current_disorder": "General learning disability",
+            "movement_options": [
                 {
-                    "required symptoms": [
-                        {
-                            "Output based difficulties": "<3"
-                        },
-                        {
-                            "Input based difficulties": "<3"
-                        },
-                        {
-                            "Learning based difficulties": ">3"
-                        }
+                    "required_symptoms": [
+                        { "Maintaining focus": ">2" },
+                        { "Physical restlessness": ">3" },
+                        { "Time management": ">2" },
+                        { "Forgetting instructions": ">2" },
+                        { "Starting or completing tasks": ">2" }
                     ],
-                    "number": 2,
-                    "new direction": "Ext Learning disabilities"
+                    "number": 3,
+                    "new_direction": "ADHD-like characteristics"
                 },
                 {
-                    "required symptoms": [
-                        {
-                            "Output based difficulties": "<3"
-                        },
-                        {
-                            "Input based difficulties": ">3"
-                        },
-                        {
-                            "Learning based difficulties": "<3"
-                        }
+                    "required_symptoms": [
+                        { "Following spoken instructions": ">2" },
+                        { "Distinguishing similar sounds": ">2" },
+                        { "Understanding in noisy environments": ">2" }
                     ],
                     "number": 2,
-                    "new direction": "Input based disabilities"
+                    "new_direction": "Auditory Processing Disorder"
                 },
                 {
-                    "required symptoms": [
-                        {
-                            "Output based difficulties": ">3"
-                        },
-                        {
-                            "Input based difficulties": "<3"
-                        },
-                        {
-                            "Learning based difficulties": "<3"
-                        }
+                    "required_symptoms": [
+                        { "Reading visual clarity": ">3" },
+                        { "Remembering input information": ">3" }
                     ],
                     "number": 2,
-                    "new direction": "Output based disabilities"
-                }
-            ],
-            "else": "General learning disabilities non specific conclusion"
-        },
-        {
-            "current disorder": "ext learning disabilities",
-            "movement options": [
+                    "new_direction": "Reading Comprehension Issues"
+                },
                 {
-                    "required symptoms": [
-                        "reading disability",
-                        "writing disability",
-                        "mathematical disability",
-                        "executive function disability",
-                        "language disabilities"
+                    "required_symptoms": [
+                        { "Expressing thoughts": ">1" },
+                        { "Handwriting clarity": ">1" },
+                        { "Spelling accuracy": ">1" }
                     ],
-                    "number": 1,
-                    "new direction": "Physiological/behavioral learning disabilities"
+                    "number": 2,
+                    "new_direction": "Dysgraphia"
+                },
+                {
+                    "required_symptoms": [
+                        { "Organizing thoughts": ">1" },
+                        { "Verbal hesitation": ">1" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Verbal Expression Difficulties"
+                }
+            ]
+        },
+        {
+            "current_disorder": "Auditory Processing Disorder",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Auditory Discrimination Difficulty": ">2" },
+                        { "Auditory Figure-Ground Difficulty": ">2" },
+                        { "Auditory Memory (Short-term)": ">2" },
+                        { "Difficulty processing rapid speech": ">1" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Severe Auditory Processing Disorder"
+                }
+            ]
+        },
+        {
+            "current_disorder": "Reading Comprehension Issues",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Reading visual clarity": ">2" },
+                        { "Remembering input information": ">2" },
+                        { "Difficulty understanding text": ">1" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Dyslexia"
+                }
+            ]
+        },
+        {
+            "current_disorder": "Dysgraphia",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Handwriting clarity": ">3" },
+                        { "Spelling accuracy": ">3" },
+                        { "Expressing thoughts": ">3" },
+                        { "Unable to read own handwriting": ">3" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Severe Dysgraphia suspected"
                 }
             ],
-            "else": "No learning disability"
+            "else": "Dysgraphia suspected"
         },
         {
-            "current disorder": "Input learning disabilities",
-            "required symptoms": [
-                "reading disability",
-                "writing disability",
-                "mathematical disability",
-                "executive function disability",
-                "language disabilities"
+            "current_disorder": "Verbal Expression Difficulties",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Organizing thoughts": ">2" },
+                        { "Verbal hesitation": ">2" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Speech and Language Disorder"
+                }
+            ]
+        },
+        {
+            "current_disorder": "ADHD-like characteristics",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Maintaining focus": ">3" },
+                        { "Physical restlessness": ">3" },
+                        { "Time management": ">3" },
+                        { "Careless mistakes": ">3" },
+                        { "Understanding in noisy environments": ">2" },
+                        { "Forgetful": ">3" }
+                    ],
+                    "number": 3,
+                    "new_direction": "Severe ADHD suspected (Final)"
+                }
             ],
-            "number": 1,
-            "new direction": "conclusion physiological disability",
-            "else": "No learning disability"
+            "else": "ADHD suspected (Final)"
         },
         {
-            "current disorder": "Output learning disabilities",
-            "required symptoms": [
-                "reading disability",
-                "writing disability",
-                "mathematical disability",
-                "executive function disability",
-                "language disabilities"
-            ],
-            "number": 1,
-            "new direction": "conclusion physiological disability",
-            "else": "No learning disability"
+            "current_disorder": "Dyscalculia",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Difficulty understanding numbers": ">2" },
+                        { "Difficulty with mathematical operations": ">2" },
+                        { "Confusion with mathematical symbols": ">1" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Severe Dyscalculia suspected"
+                }
+            ]
         },
         {
-            "current disorder": "Input Output learning disabilities",
-            "required symptoms": [
-                "reading disability",
-                "writing disability",
-                "mathematical disability",
-                "executive function disability",
-                "language disabilities"
-            ],
-            "number": 1,
-            "new direction": "conclusion physiological disability",
-            "else": "No learning disability"
-        },
-        {
-            "current disorder": "conclusion physiological disability",
-            "advice": "The assessment suggests a physiological learning disability. Please consult a specialist."
-        },
-        {
-            "current disorder": "No learning disability",
-            "advice": "There is no indication of a learning disability based on the responses."
+            "current_disorder": "Nonverbal Learning Disability (NVLD)",
+            "movement_options": [
+                {
+                    "required_symptoms": [
+                        { "Difficulty with spatial awareness": ">2" },
+                        { "Poor coordination": ">2" },
+                        { "Difficulty interpreting nonverbal cues": ">1" }
+                    ],
+                    "number": 2,
+                    "new_direction": "Severe NVLD suspected"
+                }
+            ]
         }
     ],
-    "Facts": []
+    "Advice": [
+        {
+            "current_disorder": "None detected",
+            "advice": "There is no indication of a learning disability based on the responses."
+        },
+        {
+            "current_disorder": "General learning disability",
+            "advice": "Based on the symptoms, a general learning disability may be present. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Dysgraphia suspected",
+            "advice": "Based on the symptoms, a Dysgraphia diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Severe Dysgraphia suspected",
+            "advice": "Based on the symptoms, a Severe Dysgraphia diagnosis is extremely recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "ADHD suspected",
+            "advice": "Based on the symptoms, an ADHD diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Severe ADHD suspected",
+            "advice": "Based on the symptoms, a Severe ADHD diagnosis is extremely recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Auditory Processing Disorder",
+            "advice": "Based on the symptoms, an Auditory Processing Disorder diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Severe Auditory Processing Disorder",
+            "advice": "Based on the symptoms, a Severe Auditory Processing Disorder diagnosis is strongly recommended. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Verbal Expression Difficulties",
+            "advice": "Based on the symptoms, difficulties in verbal expression are indicated. Please consult a healthcare professional for further evaluation."
+        },
+        {
+            "current_disorder": "Reading Comprehension Issues",
+            "advice": "Based on the symptoms, reading comprehension difficulties may be present. Consulting a specialist is recommended for further assessment."
+        },
+        {
+            "current_disorder": "Dyscalculia suspected",
+            "advice": "Based on the symptoms, Dyscalculia may be present. It is recommended to consult a specialist for further evaluation."
+        },
+        {
+            "current_disorder": "Nonverbal Learning Disability (NVLD) suspected",
+            "advice": "Based on the symptoms, NVLD may be present. It is recommended to consult a specialist for further evaluation."
+        }
+    ],
+    "Facts": [
+    ]
 }
