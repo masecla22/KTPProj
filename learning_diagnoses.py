@@ -17,7 +17,7 @@ def read_file(filename):
 
 def questions_to_ask(disorders, facts):  # Ensure proper indentation level here
     for symptom in disorders:
-        answer = input(f"{symptom['name']} (1 to 5): ")
+        answer = input(f"{symptom['question']} (1 to 5): ")
         facts.append((symptom["name"], answer))
 
 def calc_disorders_to_investigate(curr_disorder, rules, facts, current_disorders, knowledge_base):
