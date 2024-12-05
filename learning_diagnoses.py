@@ -22,14 +22,14 @@ def questions_to_ask(disorders, facts):  # Ensure proper indentation level here
 
 def calc_disorders_to_investigate(curr_disorder, rules, facts, current_disorders, knowledge_base):
     ruleset_for_curr_disorder = next(
-        (rule for rule in rules if rule["current disorder"] == curr_disorder["disorder"]), None
+        (rule for rule in rules if rule["current_disorder"] == curr_disorder["disorder"]), None
     )
 
-    for movement_option in ruleset_for_curr_disorder["movement options"]:
+    for movement_option in ruleset_for_curr_disorder["movement_options"]:
         number_required = movement_option["number"]
-        disorder_direction = movement_option["new direction"]
+        disorder_direction = movement_option["new_direction"]
 
-        for symptom in movement_option["required symptoms"]:
+        for symptom in movement_option["required_symptoms"]:
             key, value = list(symptom.items())[0]
             fact = next((f for f in facts if f[0] == key), None)
 

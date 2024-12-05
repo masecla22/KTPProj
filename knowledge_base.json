@@ -285,7 +285,8 @@
                     "required_symptoms": [
                         { "General learning disability suspected": ">2" },
                         { "Inconsistent academic performance": ">2" },
-                        { "Low self-esteem or frustration in learning": ">2" }
+                        { "Low self-esteem or frustration in learning": ">2" },
+                        { "Avoidance of academic tasks": ">2" }
                     ],
                     "number": 2,
                     "new_direction": "General learning disability"

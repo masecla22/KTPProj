@@ -7,6 +7,7 @@
     <list default="true" id="57af8820-addf-4901-98aa-2ce5e90770b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/knowledge_base.json" beforeDir="false" afterPath="$PROJECT_DIR$/knowledge_base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_diagnoses.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_diagnoses.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,8 @@
       <workItem from="1731666212063" duration="44000" />
       <workItem from="1731675017151" duration="62000" />
       <workItem from="1732265744832" duration="331000" />
-      <workItem from="1732626656387" duration="6397000" />
+      <workItem from="1732626656387" duration="7087000" />
+      <workItem from="1733413224658" duration="535000" />
     </task>
     <servers />
   </component>
@@ -149,6 +151,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KTPProj$KTP_therapy_system.coverage" NAME="learning_diagnoses Coverage Results" MODIFIED="1731503557365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/KTPProj$learning_diagnoses.coverage" NAME="learning_diagnoses Coverage Results" MODIFIED="1732631464389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KTPProj$learning_diagnoses.coverage" NAME="learning_diagnoses Coverage Results" MODIFIED="1733413586574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
