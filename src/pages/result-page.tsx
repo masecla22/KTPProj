@@ -2,7 +2,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useSearchParams } from "react-router-dom";
-import knowledge from "@/knowledge/knowledge_base.json";
 
 export default function ResultsPage() {
     const [searchParams, _] = useSearchParams();
