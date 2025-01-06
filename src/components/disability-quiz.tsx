@@ -177,13 +177,6 @@ export default function DisabilityLearningQuiz(props: { onComplete: (result: Rec
               Next
             </Button>
           </CardFooter>
-          <CardFooter className="flex justify-between">
-            {[...currentDisorders, currentDisorder].map((disorder, index) => <>
-              <div key={index} className="flex items-center space-x-2">
-                <span>{disorder.disorder}</span>
-              </div>
-            </>)}
-          </CardFooter>
         </>
       }
     </Card>
