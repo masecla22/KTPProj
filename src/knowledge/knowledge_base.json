@@ -6,7 +6,7 @@
             "symptoms": [
                 {
                     "name": "General learning disability suspected",
-                    "question": "Is there a general learning disability suspected?"
+                    "question": "Is there a general learning disability suspected? Please rank all answers from 1 meaning 'Not at all' to 5 meaning 'Very much'."
                 },
                 {
                     "name": "Inconsistent academic performance",
@@ -28,7 +28,7 @@
             "symptoms": [
                 {
                     "name": "Following spoken instructions",
-                    "question": "Does the individual find it difficult to follow spoken instructions, especially if they are long or detailed?"
+                    "question": "Does the individual find it difficult to follow spoken instructions in general?"
                 },
                 {
                     "name": "Distinguishing similar sounds",
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "Handwriting clarity",
-                    "question": "Is your handwriting difficult for others (or yourself) to read?"
+                    "question": "Is the individuals handwriting difficult for others (or themselves) to read?"
                 },
                 {
                     "name": "Spelling accuracy",
@@ -88,7 +88,7 @@
                 },
                 {
                     "name": "Difficulty following multi-step instructions",
-                    "question": "Does the individual have difficulty following instructions that involve multiple steps?"
+                    "question": "Does the individual have difficulty following instructions significant more when they involve multiple steps?"
                 },
                 {
                     "name": "Frequent errors in mathematical calculations",
@@ -166,7 +166,7 @@
             "symptoms": [
                 {
                     "name": "Auditory Discrimination Difficulty",
-                    "question": "Does the individual often confuse similar-sounding words, such as 'bat' and 'pat'?"
+                    "question": "Does the individual often confuse similar-sounding words, such as 'bat' and 'pat' however if written instantly knows the difference?"
                 },
                 {
                     "name": "Auditory Figure-Ground Difficulty",
@@ -336,8 +336,8 @@
                 },
                 {
                     "required_symptoms": [
-                        { "Organizing thoughts": ">1" },
-                        { "Verbal hesitation": ">1" }
+                        { "Organizing thoughts": ">2" },
+                        { "Verbal hesitation": ">2" }
                     ],
                     "number": 2,
                     "new_direction": "Verbal Expression Difficulties"
@@ -452,6 +452,10 @@
     "Advice": [
         {
             "current_disorder": "None detected",
+            "advice": "There is no indication of a learning disability based on the responses."
+        },
+        {
+            "current_disorder": "No learning disability suspected",
             "advice": "There is no indication of a learning disability based on the responses."
         },
         {
