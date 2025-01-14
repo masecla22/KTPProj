@@ -105,8 +105,8 @@
                     "question": "Does the individual find it difficult to read your own handwriting?"
                 },
                 {
-                    "name": "Handwriting clarity",
-                    "question": "Is the individuals handwriting difficult for others to read?"
+                    "name": "Handwriting clarity impossible",
+                    "question": "Is the individuals handwriting often impossible for others to read?"
                 },
                 {
                     "name": "Hand fatigue",
@@ -378,7 +378,7 @@
             "movement_options": [
                 {
                     "required_symptoms": [
-                        { "Handwriting clarity": ">3" },
+                        { "Handwriting clarity impossible": ">3" },
                         { "Spelling accuracy": ">3" },
                         { "Expressing thoughts": ">3" },
                         { "Unable to read own handwriting": ">3" }
