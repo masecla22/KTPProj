@@ -460,47 +460,71 @@
         },
         {
             "current_disorder": "General learning disability",
-            "advice": "Based on the symptoms, a general learning disability may be present. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, a general learning disability may be present. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "Dysgraphia suspected",
-            "advice": "Based on the symptoms, a Dysgraphia diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, a Dysgraphia diagnosis is recommended. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "Severe Dysgraphia suspected",
-            "advice": "Based on the symptoms, a Severe Dysgraphia diagnosis is extremely recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, a Severe Dysgraphia diagnosis is extremely recommended. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "ADHD suspected",
-            "advice": "Based on the symptoms, an ADHD diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, an ADHD diagnosis is recommended. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "Severe ADHD suspected",
-            "advice": "Based on the symptoms, a Severe ADHD diagnosis is extremely recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, a Severe ADHD diagnosis is extremely recommended. Please consult a specialist for further evaluation."
+        },
+        {
+            "current_disorder": "ADHD-like characteristics",
+            "advice": "Based on the symptoms, characteristics similar to ADHD are indicated. Further assessment by a specialist is recommended."
         },
         {
             "current_disorder": "Auditory Processing Disorder",
-            "advice": "Based on the symptoms, an Auditory Processing Disorder diagnosis is recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, an Auditory Processing Disorder diagnosis is recommended. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "Severe Auditory Processing Disorder",
-            "advice": "Based on the symptoms, a Severe Auditory Processing Disorder diagnosis is strongly recommended. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, a Severe Auditory Processing Disorder diagnosis is strongly recommended. Please consult a specialist for further evaluation."
         },
         {
             "current_disorder": "Verbal Expression Difficulties",
-            "advice": "Based on the symptoms, difficulties in verbal expression are indicated. Please consult a healthcare professional for further evaluation."
+            "advice": "Based on the symptoms, difficulties in verbal expression are indicated. Please consult a specialist for further evaluation."
+        },
+        {
+            "current_disorder": "Speech and Language Disorder",
+            "advice": "The symptoms suggest difficulties with speech and language. Consulting a speech therapist or specialist is recommended."
         },
         {
             "current_disorder": "Reading Comprehension Issues",
             "advice": "Based on the symptoms, reading comprehension difficulties may be present. Consulting a specialist is recommended for further assessment."
         },
         {
+            "current_disorder": "Dyslexia",
+            "advice": "The symptoms indicate Dyslexia. It is strongly recommended to consult a specialist for further evaluation."
+        },
+        {
+            "current_disorder": "Severe Dyslexia suspected",
+            "advice": "The symptoms strongly indicate Severe Dyslexia. Immediate consultation with a specialist is highly recommended."
+        },
+        {
             "current_disorder": "Dyscalculia suspected",
             "advice": "Based on the symptoms, Dyscalculia may be present. It is recommended to consult a specialist for further evaluation."
         },
         {
+            "current_disorder": "Severe Dyscalculia suspected",
+            "advice": "The symptoms strongly indicate Severe Dyscalculia. Immediate consultation with a specialist is highly recommended."
+        },
+        {
             "current_disorder": "Nonverbal Learning Disability (NVLD) suspected",
             "advice": "Based on the symptoms, NVLD may be present. It is recommended to consult a specialist for further evaluation."
+        },
+        {
+            "current_disorder": "Severe NVLD suspected",
+            "advice": "The symptoms strongly indicate Severe NVLD. Immediate consultation with a specialist is highly recommended."
         }
     ],
     "Facts": [
