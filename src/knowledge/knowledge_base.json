@@ -5,7 +5,7 @@
             "Weight": 1,
             "symptoms": [
                 {
-                    "name": "General learning difficult suspected",
+                    "name": "General learning difficulty suspected",
                     "question": "Is there a general learning difficult suspected?\n\n Please rank all answers from 1 meaning 'Not at all' to 5 meaning 'Very much'. If true or false then answer 1 for false and 5 for true"
                 },
                 {
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "disorder": "General learning difficult",
+            "disorder": "General learning difficulty",
             "Weight": 2,
             "symptoms": [
                 {
@@ -251,7 +251,7 @@
             ]
         },
         {
-            "disorder": "Nonverbal Learning difficult (NVLD)",
+            "disorder": "Nonverbal Learning difficulty (NVLD)",
             "Weight": 1,
             "symptoms": [
                 {
@@ -283,7 +283,7 @@
             "movement_options": [
                 {
                     "required_symptoms": [
-                        { "General learning difficult suspected": ">2" },
+                        { "General learning difficulty suspected": ">2" },
                         { "Inconsistent academic performance": ">2" },
                         { "Low self-esteem or frustration in learning": ">2" },
                         { "Avoidance of academic tasks": ">2" }
@@ -295,7 +295,7 @@
             "else": "No learning difficult suspected"
         },
         {
-            "current_disorder": "General learning difficult",
+            "current_disorder": "General learning difficulty",
             "movement_options": [
                 {
                     "required_symptoms": [
@@ -436,7 +436,7 @@
             ]
         },
         {
-            "current_disorder": "Nonverbal Learning difficult (NVLD)",
+            "current_disorder": "Nonverbal Learning difficulty (NVLD)",
             "movement_options": [
                 {
                     "required_symptoms": [
@@ -456,7 +456,7 @@
             "advice": "There is no indication of a learning difficulty based on the responses."
         },
         {
-            "current_disorder": "No learning difficult suspected",
+            "current_disorder": "No learning difficulty suspected",
             "advice": "There is no indication of a learning difficulty based on the responses. If you still encounter errors you may want to seek help from a specialist."
         },
         {
