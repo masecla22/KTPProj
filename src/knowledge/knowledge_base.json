@@ -289,7 +289,7 @@
                         { "Avoidance of academic tasks": ">2" }
                     ],
                     "number": 2,
-                    "new_direction": "General learning difficult"
+                    "new_direction": "General learning difficulty"
                 }
             ],
             "else": "No learning difficult suspected"
@@ -370,7 +370,7 @@
                         { "Difficulty understanding text": ">1" }
                     ],
                     "number": 2,
-                    "new_direction": "Dyslexia"
+                    "new_direction": "Dyslexia suspected"
                 }
             ]
         },
@@ -416,7 +416,7 @@
                         { "Forgetful": ">3" }
                     ],
                     "number": 3,
-                    "new_direction": "Severe ADHD suspected (Final)"
+                    "new_direction": "Severe ADHD suspected"
                 }
             ],
             "else": "ADHD suspected (Final)"
@@ -456,8 +456,8 @@
             "advice": "There is no indication of a learning difficulty based on the responses."
         },
         {
-            "current_disorder": "No learning difficulty suspected",
-            "advice": "There is no indication of a learning difficulty based on the responses."
+            "current_disorder": "No learning difficult suspected",
+            "advice": "There is no indication of a learning difficulty based on the responses. If you still encounter errors you may want to seek help from a specialist."
         },
         {
             "current_disorder": "General learning difficulty",
@@ -504,7 +504,7 @@
             "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
-            "current_disorder": "Dyslexia",
+            "current_disorder": "Dyslexia suspected",
             "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
