@@ -5,12 +5,12 @@
             "Weight": 1,
             "symptoms": [
                 {
-                    "name": "General learning disability suspected",
-                    "question": "Is there a general learning disability suspected? Please rank all answers from 1 meaning 'Not at all' to 5 meaning 'Very much'."
+                    "name": "General learning difficult suspected",
+                    "question": "Is there a general learning difficult suspected?\n\n Please rank all answers from 1 meaning 'Not at all' to 5 meaning 'Very much'. If true or false then answer 1 for false and 5 for true"
                 },
                 {
                     "name": "Inconsistent academic performance",
-                    "question": "Does the individual show inconsistent academic performance across subjects?"
+                    "question": "Does the individual show inconsistent academic performance across subjects or learning situations?"
                 },
                 {
                     "name": "Low self-esteem or frustration in learning",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "disorder": "General learning disability",
+            "disorder": "General learning difficult",
             "Weight": 2,
             "symptoms": [
                 {
@@ -44,23 +44,23 @@
                 },
                 {
                     "name": "Remembering input information",
-                    "question": "Does the individual find it challenging to remember information you read or hear?"
+                    "question": "Does the individual find it challenging to remember information they read or hear?"
                 },
                 {
                     "name": "Expressing thoughts",
-                    "question": "Does the individual find it hard to put your thoughts into words, either spoken or written?"
+                    "question": "Does the individual find it hard to put their thoughts into words, either spoken or written?"
                 },
                 {
-                    "name": "Handwriting clarity",
-                    "question": "Is the individuals handwriting difficult for others (or themselves) to read?"
+                    "name": "different language",
+                    "question": "Did the individual originally learn in a different langauge"
                 },
                 {
                     "name": "Spelling accuracy",
-                    "question": "Does the individual often make errors when trying to spell words, even ones you know well?"
+                    "question": "Does the individual often make errors when trying to spell words, even ones they know well?"
                 },
                 {
                     "name": "Organizing thoughts",
-                    "question": "Does the individual have trouble organizing your thoughts when speaking or writing?"
+                    "question": "Does the individual have trouble organizing their thoughts when speaking or writing?"
                 },
                 {
                     "name": "Verbal hesitation",
@@ -76,7 +76,7 @@
                 },
                 {
                     "name": "Time management",
-                    "question": "Does the individual struggle to manage your time effectively or keep track of deadlines?"
+                    "question": "Does the individual struggle to manage their time effectively or keep track of deadlines?"
                 },
                 {
                     "name": "Forgetting instructions",
@@ -92,7 +92,7 @@
                 },
                 {
                     "name": "Frequent errors in mathematical calculations",
-                    "question": "Does the individual often make errors in basic mathematical calculations, even when you understand the concepts?"
+                    "question": "Does the individual often make errors in basic mathematical calculations, even when they understand the concepts?"
                 }
             ]
         },
@@ -102,7 +102,7 @@
             "symptoms": [
                 {
                     "name": "Unable to read own handwriting",
-                    "question": "Does the individual find it difficult to read your own handwriting?"
+                    "question": "Does the individual find it difficult to read their own handwriting?"
                 },
                 {
                     "name": "Handwriting clarity impossible",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "Inconsistent letter sizing",
-                    "question": "Does the individual find that their letters often vary significantly in size when writing, making your handwriting difficult to read?"
+                    "question": "Does the individual find that their letters often vary significantly in size when writing, making their handwriting difficult to read?"
                 }
             ]
         },
@@ -136,23 +136,23 @@
                 },
                 {
                     "name": "Forgetful",
-                    "question": "Does the individual consider yourself forgetful?"
+                    "question": "Does the individual consider themselves forgetful?"
                 },
                 {
                     "name": "Impulsivity",
-                    "question": "Does the individual often act without thinking or find it hard to wait your turn?"
+                    "question": "Does the individual often act without thinking or find it hard to wait their turn?"
                 },
                 {
                     "name": "Difficulty staying organized",
-                    "question": "Does the individual struggle to keep your belongings or tasks organized?"
+                    "question": "Does the individual struggle to keep their belongings or tasks organized?"
                 },
                 {
                     "name": "Frequent daydreaming",
-                    "question": "Does the individual find yourself daydreaming frequently or zoning out during tasks?"
+                    "question": "Does the individual find themselves daydreaming frequently or zoning out during tasks?"
                 },
                 {
                     "name": "Hyperfocus",
-                    "question": "Does the individual sometimes become so focused on one task that you lose track of time or forget other responsibilities?"
+                    "question": "Does the individual sometimes become so focused on one task that they lose track of time or forget other responsibilities?"
                 },
                 {
                     "name": "Easily bored",
@@ -178,7 +178,7 @@
                 },
                 {
                     "name": "Auditory Memory (Long-term)",
-                    "question": "Does the individual have trouble recalling information that you heard long ago, such as stories or directions?"
+                    "question": "Does the individual have trouble recalling information that they heard long ago, such as stories or directions?"
                 },
                 {
                     "name": "Auditory Sequencing Difficulty",
@@ -204,7 +204,7 @@
             "symptoms": [
                 {
                     "name": "Difficulty understanding text",
-                    "question": "Does the individual struggle to understand what you read, even if you read slowly and carefully?"
+                    "question": "Does the individual struggle to understand what they read, even if they read slowly and carefully?"
                 },
                 {
                     "name": "Rereading passages",
@@ -212,7 +212,7 @@
                 },
                 {
                     "name": "Difficulty identifying main ideas",
-                    "question": "Does the individual find it challenging to identify the main ideas or important details in what you read?"
+                    "question": "Does the individual find it challenging to identify the main ideas or important details in what they read?"
                 },
                 {
                     "name": "Skipping words or lines",
@@ -251,7 +251,7 @@
             ]
         },
         {
-            "disorder": "Nonverbal Learning Disability (NVLD)",
+            "disorder": "Nonverbal Learning difficult (NVLD)",
             "Weight": 1,
             "symptoms": [
                 {
@@ -283,19 +283,19 @@
             "movement_options": [
                 {
                     "required_symptoms": [
-                        { "General learning disability suspected": ">2" },
+                        { "General learning difficult suspected": ">2" },
                         { "Inconsistent academic performance": ">2" },
                         { "Low self-esteem or frustration in learning": ">2" },
                         { "Avoidance of academic tasks": ">2" }
                     ],
                     "number": 2,
-                    "new_direction": "General learning disability"
+                    "new_direction": "General learning difficult"
                 }
             ],
-            "else": "No learning disability suspected"
+            "else": "No learning difficult suspected"
         },
         {
-            "current_disorder": "General learning disability",
+            "current_disorder": "General learning difficult",
             "movement_options": [
                 {
                     "required_symptoms": [
@@ -320,7 +320,8 @@
                 {
                     "required_symptoms": [
                         { "Reading visual clarity": ">3" },
-                        { "Remembering input information": ">3" }
+                        { "Remembering input information": ">3" },
+                        { "different language": "<3" }
                     ],
                     "number": 2,
                     "new_direction": "Reading Comprehension Issues"
@@ -328,7 +329,7 @@
                 {
                     "required_symptoms": [
                         { "Expressing thoughts": ">1" },
-                        { "Handwriting clarity": ">1" },
+                        { "different language": "<3" },
                         { "Spelling accuracy": ">1" }
                     ],
                     "number": 2,
@@ -435,7 +436,7 @@
             ]
         },
         {
-            "current_disorder": "Nonverbal Learning Disability (NVLD)",
+            "current_disorder": "Nonverbal Learning difficult (NVLD)",
             "movement_options": [
                 {
                     "required_symptoms": [
@@ -449,82 +450,82 @@
             ]
         }
     ],
-    "Advice": [
+    "Advice":[
         {
             "current_disorder": "None detected",
-            "advice": "There is no indication of a learning disability based on the responses."
+            "advice": "There is no indication of a learning difficulty based on the responses."
         },
         {
-            "current_disorder": "No learning disability suspected",
-            "advice": "There is no indication of a learning disability based on the responses."
+            "current_disorder": "No learning difficulty suspected",
+            "advice": "There is no indication of a learning difficulty based on the responses."
         },
         {
-            "current_disorder": "General learning disability",
-            "advice": "Based on the symptoms, a general learning disability may be present. Please consult a specialist for further evaluation."
+            "current_disorder": "General learning difficulty",
+            "advice": "We believe it could be beneficial to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Dysgraphia suspected",
-            "advice": "Based on the symptoms, a Dysgraphia diagnosis is recommended. Please consult a specialist for further evaluation."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Severe Dysgraphia suspected",
-            "advice": "Based on the symptoms, a Severe Dysgraphia diagnosis is extremely recommended. Please consult a specialist for further evaluation."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
             "current_disorder": "ADHD suspected",
-            "advice": "Based on the symptoms, an ADHD diagnosis is recommended. Please consult a specialist for further evaluation."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Severe ADHD suspected",
-            "advice": "Based on the symptoms, a Severe ADHD diagnosis is extremely recommended. Please consult a specialist for further evaluation."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
             "current_disorder": "ADHD-like characteristics",
-            "advice": "Based on the symptoms, characteristics similar to ADHD are indicated. Further assessment by a specialist is recommended."
+            "advice": "We believe it could be beneficial to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Auditory Processing Disorder",
-            "advice": "Based on the symptoms, an Auditory Processing Disorder diagnosis is recommended. Please consult a specialist for further evaluation."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Severe Auditory Processing Disorder",
-            "advice": "Based on the symptoms, a Severe Auditory Processing Disorder diagnosis is strongly recommended. Please consult a specialist for further evaluation."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
             "current_disorder": "Verbal Expression Difficulties",
-            "advice": "Based on the symptoms, difficulties in verbal expression are indicated. Please consult a specialist for further evaluation."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Speech and Language Disorder",
-            "advice": "The symptoms suggest difficulties with speech and language. Consulting a speech therapist or specialist is recommended."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Reading Comprehension Issues",
-            "advice": "Based on the symptoms, reading comprehension difficulties may be present. Consulting a specialist is recommended for further assessment."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Dyslexia",
-            "advice": "The symptoms indicate Dyslexia. It is strongly recommended to consult a specialist for further evaluation."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
             "current_disorder": "Severe Dyslexia suspected",
-            "advice": "The symptoms strongly indicate Severe Dyslexia. Immediate consultation with a specialist is highly recommended."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
             "current_disorder": "Dyscalculia suspected",
-            "advice": "Based on the symptoms, Dyscalculia may be present. It is recommended to consult a specialist for further evaluation."
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Severe Dyscalculia suspected",
-            "advice": "The symptoms strongly indicate Severe Dyscalculia. Immediate consultation with a specialist is highly recommended."
+            "advice": "We highly recommend you to seek a specialist in this area."
         },
         {
-            "current_disorder": "Nonverbal Learning Disability (NVLD) suspected",
-            "advice": "Based on the symptoms, NVLD may be present. It is recommended to consult a specialist for further evaluation."
+            "current_disorder": "Nonverbal Learning difficulty (NVLD) suspected",
+            "advice": "We would recommend you to seek help from a specialist in this area."
         },
         {
             "current_disorder": "Severe NVLD suspected",
-            "advice": "The symptoms strongly indicate Severe NVLD. Immediate consultation with a specialist is highly recommended."
+            "advice": "We highly recommend you to seek a specialist in this area."
         }
     ],
     "Facts": [
